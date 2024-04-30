@@ -18,7 +18,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 - Se è divisibile per entrambi allora console.log("FizzBuzz")
 
 Bonus 1:
-- Una volta che capisco quali numeri sono divisibili allora in quell'istanza manipolo il DOM grazie all' .append (che mi permette di aggiungere elementi HTML)
+- Una volta che capisco quali numeri sono divisibili allora in quell'istanza manipolo il DOM grazie all' getElementById oppure querySelector, create Element e .append (che mi permette di aggiungere elementi HTML)
 
 Bonus 2: 
 - Utilizzo .classList.add per aggiungere classi specifiche che conterrano colori specifici creati dal CSS al mio file HTML per gli elementi contenent Fizz Buzz e FizzBuzz
