@@ -26,22 +26,22 @@ function fizzBuzz() {
                     div.append(fizz);
                     //adding class name CUBE and FIZZ to div
                     div.className = div.classList + "cube" + " fizz";
-                } else if (i % 5 === 0) {
-                    console.log(buzz);
-                    row.append(div);
-                    div.append(buzz);
-                    //adding class name CUBE and BUZZ to div
-                    div.className = div.classList + "cube" + " buzz";
+                } else
+                    if (i % 5 === 0) {
+                        console.log(buzz);
+                        row.append(div);
+                        div.append(buzz);
+                        //adding class name CUBE and BUZZ to div
+                        div.className = div.classList + "cube" + " buzz";
 
-                } else {
-                    console.log(i);
-                    row.append(div);
-                    div.append(i);
-                    //adding class name CUBE and normal to div
-                    div.className = div.classList + "cube" + " normal";
-                }
+                    } else {
+                        console.log(i);
+                        row.append(div);
+                        div.append(i);
+                        //adding class name CUBE and normal to div
+                        div.className = div.classList + "cube" + " normal";
+                    }
         }
-
     }
     else { alert("Insert a valid Number"); }
 }
