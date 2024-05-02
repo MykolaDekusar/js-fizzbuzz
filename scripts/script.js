@@ -13,31 +13,23 @@ function fizzBuzz() {
         if (!(userInput > 1000)) {
             for (let i = 1; i <= userInput; i++) {
                 const div = document.createElement("div"); //creating a DIV element
+                row.append(div); //appending a div element to the row
                 if (i % 3 === 0 && i % 5 === 0) {
                     console.log(fizz + buzz);
-                    row.append(div);
                     div.append(fizz + buzz);
-                    //adding class name CUBE and FIZZ-BUZZ to div
-                    div.className = div.classList + "cube" + " fizz-buzz";
+                    div.className = div.classList + "cube" + " fizz-buzz";//adding class name CUBE and FIZZ-BUZZ to div
                 } else if (i % 3 === 0) {
                     console.log(fizz);
-                    row.append(div);
                     div.append(fizz);
-                    //adding class name CUBE and FIZZ to div
-                    div.className = div.classList + "cube" + " fizz";
+                    div.className = div.classList + "cube" + " fizz";//adding class name CUBE and FIZZ to div
                 } else if (i % 5 === 0) {
                     console.log(buzz);
-                    row.append(div);
                     div.append(buzz);
-                    //adding class name CUBE and BUZZ to div
-                    div.className = div.classList + "cube" + " buzz";
-
+                    div.className = div.classList + "cube" + " buzz";//adding class name CUBE and BUZZ to div
                 } else {
                     console.log(i);
-                    row.append(div);
                     div.append(i);
-                    //adding class name CUBE and normal to div
-                    div.className = div.classList + "cube" + " normal";
+                    div.className = div.classList + "cube" + " normal";//adding class name CUBE and normal to div
                 }
             }
         } else { alert("Insert a number between 1 and 1000") }
